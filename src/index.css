@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif; /* Added fallback font */
+}
+
+body {
+  height: 100vh;
+  background-color: #ebebeb;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  margin: 50px;
+  max-width: 500px;
+  width: 100%; /* Ensures it scales down */
+}
+
+.heading {
+  text-decoration: underline;
+  font-size: 32px;
+  font-weight: 700;
+  text-underline-offset: 5px;
+}
+
+.expense {
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.history-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(243, 243, 243);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  transform: translate(0);
+}
+
+.history-list:hover {
+  transform: translate(-20px, 0);
+}
+
+
+.history-list button{
+  border: none;
+  background-color: #EE4E4E;
+  padding: 0px 10px;
+  color: white;
+
+}
+
+.add-amount {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.amount{
+  font-size: 4rem;
+}
+
+.add-amount button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.add-amount input {
+  padding: 10px;
+  border: none;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .main {
+    margin: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .expense {
+    font-size: 6rem;
+  }
+
+  .history-list {
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px 0;
+  }
+
+  .add-amount button, .add-amount input {
+    padding: 8px;
+  }
+}
